@@ -1,0 +1,24 @@
+name: 'Multi Labeler'
+description: 'Multi labeler for title, body, comments, commit messages, branch, author or files with automated status checks.'
+author: 'step-security'
+branding:
+  icon: tag
+  color: yellow
+
+inputs:
+  config-path:
+    description: 'The path for the label configurations'
+    default: '.github/labeler.yml'
+    required: false
+  config-repo:
+    description: 'The repository for the label configurations'
+    default: ${{ github.repository }}
+    required: false
+  github-token:
+    description: 'GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)'
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
