@@ -13,7 +13,7 @@ on:
       script:
         description: 'Script to run after audit fix'
         required: false
-        default: 'npm run package'
+        default: 'npm run build && npm run package'
 
   schedule:
     - cron: '0 0 * * 1'
@@ -24,7 +24,7 @@ jobs:
     with:
       force: ${{ inputs.force || false }}
       base_branch: ${{ inputs.base_branch || 'main' }}
-      script: ${{ inputs.script || 'npm run package' }}
+      script: ${{ inputs.script || 'npm run build && npm run package' }}
 
 permissions:
   contents: write
