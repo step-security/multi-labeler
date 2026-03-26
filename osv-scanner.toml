@@ -1,0 +1,19 @@
+[[IgnoredVulns]]
+id = "GHSA-2mjp-6q6p-2qxm"
+reason = "undici is a transitive dep of @actions/github and @actions/core; this code only makes REST calls to trusted GitHub API with SDK-managed headers, so request smuggling via duplicate Content-Length is not exploitable"
+
+[[IgnoredVulns]]
+id = "GHSA-4992-7rv2-5pvq"
+reason = "undici is a transitive dep of @actions/github and @actions/core; this code does not use the upgrade option, so CRLF injection is not exploitable"
+
+[[IgnoredVulns]]
+id = "GHSA-g9mf-h72j-4rw9"
+reason = "undici is a transitive dep of @actions/github and @actions/core; requests go to trusted GitHub API, not a malicious server, so unbounded decompression chain DoS is not exploitable"
+
+[[IgnoredVulns]]
+id = "GHSA-v9p9-hfj2-hcw8"
+reason = "undici is a transitive dep of @actions/github and @actions/core; this code only makes HTTP REST calls, not WebSocket connections, so the WebSocket crash is not exploitable"
+
+[[IgnoredVulns]]
+id = "GHSA-vrm6-8vpv-qv8q"
+reason = "undici is a transitive dep of @actions/github and @actions/core; this code only makes HTTP REST calls, not WebSocket connections, so the WebSocket decompression bomb is not exploitable"
