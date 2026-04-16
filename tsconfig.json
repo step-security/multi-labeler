@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["ES2023"],
     "module": "node16",
-    "target": "ES2022",
+    "target": "ESNext",
     "outDir": "./lib",
     "rootDir": "./src",
     "strict": true,

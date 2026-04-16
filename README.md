@@ -1,3 +1,5 @@
+[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
+
 # Multi Labeler
 
 [![Release](https://img.shields.io/github/v/release/step-security/multi-labeler)](https://github.com/step-security/multi-labeler/releases)
