@@ -12,7 +12,7 @@ on:
       node_version:
         description: "Specify Node.js version (e.g., '18', '20', 'lts/*')"
         required: false
-        default: "24"
+        default: '24'
 
 permissions:
   contents: read
@@ -27,4 +27,4 @@ jobs:
     with:
       tag: '${{ github.event.inputs.tag }}'
       script: ${{ inputs.script || 'npm run build && npm run package' }}
-      node_version: "${{ github.event.inputs.node_version }}"
+      node_version: '${{ github.event.inputs.node_version }}'
