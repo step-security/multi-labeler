@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/multi-labeler",
+   "upstream_full_repo_name": "fuxingloh/multi-labeler",
+   "action_type": "node",
+   "last_release": {
+     "tag_name": "v5.0.0",
+     "created_at": "2026-06-05T04:41:35Z",
+     "published_at": "2026-06-08T14:57:12Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
