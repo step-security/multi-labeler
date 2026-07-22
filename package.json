@@ -20,7 +20,7 @@
   "dependencies": {
     "@actions/core": "^2.0.0",
     "@actions/github": "^6.0.0",
-    "axios": "^1.8.4",
+    "axios": "^1.18.0",
     "fp-ts": "^2.16.10",
     "io-ts": "^2.2.22",
     "io-ts-reporters": "^2.0.1",
