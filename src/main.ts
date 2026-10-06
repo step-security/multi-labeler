@@ -52,7 +52,7 @@ async function removeLabels(labels: string[], config: Config): Promise<unknown[]
             issue_number: payload!.number,
             name: label.label,
           })
-          .catch((ignored) => {
+          .catch((ignored: unknown) => {
             return undefined;
           });
       }),
